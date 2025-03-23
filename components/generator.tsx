@@ -54,7 +54,7 @@ const ImageGenerator = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/generate-image", {
+      const response = await fetch("/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
